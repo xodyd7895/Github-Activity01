@@ -1,14 +1,14 @@
 package exampleForCh12;
 
 public class Car {
-	//ÇÊµå
-	
+	//Ã‡ÃŠÂµÃ¥
+	//syntax error = korean //do not mind
 	private int speed;
 	private boolean stop;
 	
-	//»ý¼ºÀÚ
+	//Â»Ã½Â¼ÂºÃ€Ãš
 	
-	//¸Þ¼Òµå
+	//Â¸ÃžÂ¼Ã’ÂµÃ¥
 	
 	public int getSpeed() {
 		return speed;

@@ -2,12 +2,12 @@ package example04;
 
 public class Time {
 	
-	//Á¢±ÙÁ¦¾îÀÚ (Access Modifier)ÀÇ Á¾·ù
-	// private : °°Àº Å¬·¡½º³»¿¡¼­¸¸ Á¢±Ù °¡´ÉÇÔ.
-	// protected : °°Àº ÆĞÅ°Áö ±×¸®°í ÀÚ¼ÕÅ¬·¡½º¿¡¼­¸¸ Á¢±ÙÀÌ °¡´ÉÇÔ.
-	// default : °°Àº ÆĞÅ°Áö¿¡¼­¸¸ Á¢±ÙÀÌ °¡´ÉÇÔ.
-	// ex) int hour; ÀÌ·±½ÄÀ¸·Î ¼±¾ğÇÏ°ÔµÇ¸é ÀÚµ¿À¸·Î default°¡ ºÙ´Â´Ù°í »ı°¢ÇÏ¸éµÊ
-	// public : ´©±¸³ª ´Ù Á¢±ÙÀÌ °¡´ÉÇÔ. 
+	//ì ‘ê·¼ì œì–´ì (Access Modifier)ì˜ ì¢…ë¥˜
+	// private : ê°™ì€ í´ë˜ìŠ¤ë‚´ì—ì„œë§Œ ì ‘ê·¼ ê°€ëŠ¥í•¨.
+	// protected : ê°™ì€ íŒ¨í‚¤ì§€ ê·¸ë¦¬ê³  ìì†í´ë˜ìŠ¤ì—ì„œë§Œ ì ‘ê·¼ì´ ê°€ëŠ¥í•¨.
+	// default : ê°™ì€ íŒ¨í‚¤ì§€ì—ì„œë§Œ ì ‘ê·¼ì´ ê°€ëŠ¥í•¨, ê¸°ë³¸ í´ë˜ìŠ¤ëª…ì— public or ê¸°íƒ€ ê°€ ë¶™ì§€ ì•ŠëŠ”ë‹¤ë©´ defaultê°€ ë¶™ëŠ”ë‹¤ê³  ìƒê°
+	// ex) int hour; ì´ëŸ°ì‹ìœ¼ë¡œ ì„ ì–¸í•˜ê²Œë˜ë©´ ìë™ìœ¼ë¡œ defaultê°€ ë¶™ëŠ”ë‹¤ê³  ìƒê°í•˜ë©´ë¨
+	// public : ëˆ„êµ¬ë‚˜ ë‹¤ ì ‘ê·¼ì´ ê°€ëŠ¥í•¨. 
 	
 	private int hour;
 	private int minute;
@@ -18,19 +18,19 @@ public class Time {
 		//return this.hour;
 	
 	
-	//source ÅÇ -> Generate getter and setter Å¬¸¯ ÈÄ 
-	//¿øÇÏ´Â ¸â¹öº¯¼ö Ã¼Å©ÇÑ ÈÄ¿¡ getter, setter¸Ş¼­µå¸¦ ÀÚµ¿¿Ï¼ºÇÏ¸é µÈ´Ù. 
+	//source íƒ­ -> Generate getter and setter í´ë¦­ í›„ 
+	//ì›í•˜ëŠ” ë©¤ë²„ë³€ìˆ˜ ì²´í¬í•œ í›„ì— getter, setterë©”ì„œë“œë¥¼ ìë™ì™„ì„±í•˜ë©´ ëœë‹¤. 
 	
 	
-	//getter() : ¸â¹öº¯¼öÀÇ °ªÀ» ÀĞ¾î°¡´Â ¸Ş¼­µå
-	//setter() : ¸â¹öº¯¼öÀÇ °ªÀ» ¼öÁ¤ÇÏ´Â ¸Ş¼­µå 
+	//getter() : ë©¤ë²„ë³€ìˆ˜ì˜ ê°’ì„ ì½ì–´ê°€ëŠ” ë©”ì„œë“œ
+	//setter() : ë©¤ë²„ë³€ìˆ˜ì˜ ê°’ì„ ìˆ˜ì •í•˜ëŠ” ë©”ì„œë“œ 
 	public int getHour() {
 		return this.hour;
 	}
 	public void setHour(int hour) {
-		//½Ã¿¡ ´ëÇÑ ¿¹¿ÜÃ³¸® ÄÚµå¸¦ ÀÛ¼º
+		//ì‹œì— ëŒ€í•œ ì˜ˆì™¸ì²˜ë¦¬ ì½”ë“œë¥¼ ì‘ì„±
 		if(hour<0 || hour >=24 ) {
-			System.out.println("½Ã°£À» Àß¸ø ÀÔ·ÂÇÔ");
+			System.out.println("ì‹œê°„ì„ ì˜ëª» ì…ë ¥í•¨");
 			return;
 		}
 		this.hour = hour;
@@ -40,9 +40,9 @@ public class Time {
 		return this.minute;
 	}
 	public void setMinute(int minute) {
-		//ºĞ¿¡ ´ëÇÑ ¿¹¿ÜÃ³¸® ÄÚµå¸¦ ÀÛ¼º
+		//ë¶„ì— ëŒ€í•œ ì˜ˆì™¸ì²˜ë¦¬ ì½”ë“œë¥¼ ì‘ì„±
 				if(minute<0 || minute >=60 ) {
-					System.out.println("ºĞÀ» Àß¸ø ÀÔ·ÂÇÔ");
+					System.out.println("ë¶„ì„ ì˜ëª» ì…ë ¥í•¨");
 					return;
 				}
 		this.minute = minute;
@@ -51,17 +51,17 @@ public class Time {
 		return this.second;
 	}
 	public void setSecond(int second) {
-		//ÃÊ¿¡ ´ëÇÑ ¿¹¿ÜÃ³¸® ÄÚµå¸¦ ÀÛ¼º
+		//ì´ˆì— ëŒ€í•œ ì˜ˆì™¸ì²˜ë¦¬ ì½”ë“œë¥¼ ì‘ì„±
 				if(second<0 || second >=60 ) {
-					System.out.println("ÃÊ¸¦ Àß¸ø ÀÔ·ÂÇÔ");
+					System.out.println("ì´ˆë¥¼ ì˜ëª» ì…ë ¥í•¨");
 					return;}
 				
 		this.second = second;
 	}
 	@Override
 	public String toString() {
-	return this.getHour() +"½Ã" + this.getMinute() + "ºĞ" +
-	       this.getSecond() +"ÃÊ";
+	return this.getHour() +"ì‹œ" + this.getMinute() + "ë¶„" +
+	       this.getSecond() +"ì´ˆ";
 	
 	}
 	

@@ -1,5 +1,5 @@
 package ch13_Game_Pikachu;
-
+//using java skill n making Game 
 public abstract class Character {
 	
 	protected int hp;
@@ -25,7 +25,7 @@ public abstract class Character {
 		}
 	}
 	public void printInfo() {
-		System.out.println("ÇöÀç Ä³¸¯ÅÍÀÇ Á¤º¸Ãâ·Â");
+		System.out.println("Ã‡Ã¶Ã€Ã§ Ã„Â³Â¸Â¯Ã…ÃÃ€Ã‡ ÃÂ¤ÂºÂ¸ÃƒÃ¢Â·Ã‚");
 		System.out.println("hp = " + hp);
 		System.out.println("energy = " +energy);
 		System.out.println("level = " + level);

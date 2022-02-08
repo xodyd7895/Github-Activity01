@@ -11,7 +11,7 @@ package exam1;
 class GuGuDan{
 	
 	public static void guguDan(int i, int k) {
-		
+		//a 
 		for(int a = 1; a<=k; a++) { 
 				System.out.println(i+"x"+a+"="+(i*a));
 		}

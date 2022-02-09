@@ -3,7 +3,8 @@ package array02;
 public class example01 {
 
 	public static void main(String[] args) {
-		//[]´ë°ýÈ£ÀÇ °¹¼ö°¡ °ð Â÷¿øÀ» ÀÇ¹ÌÇÑ´Ù.
+		//[]ëŒ€ê´„í˜¸ì˜ ê°¯ìˆ˜ê°€ ê³§ ì°¨ì›ì„ ì˜ë¯¸í•œë‹¤.
+		//ì‹¤ë¬´ì—ì„œëŠ” ë‹¤ë¥´ê²Œ ì‚¬ìš©ë˜ë‹ˆ ê°œë…ë§Œ ì•Œì•„ë‘ìž
 		
 		int[][] score = new int[][] {
 										{100,100,100},
@@ -12,37 +13,37 @@ public class example01 {
 										{60,20,40}
 													};
 
-	//2Â÷¿ø ¹è¿­ÀÇ °ªÀ» ÀÐ°í ¾²±âÀ§ÇØ¼­´Â ´õºí·çÇÁ°¡ ¹Ýµå½Ã ÇÊ¿äÇÏ´Ù.
+	//2ì°¨ì› ë°°ì—´ì˜ ê°’ì„ ì½ê³  ì“°ê¸°ìœ„í•´ì„œëŠ” ë”ë¸”ë£¨í”„ê°€ ë°˜ë“œì‹œ í•„ìš”í•˜ë‹¤.
 													
-	for(int i = 0; i<score.length;i++) {//score = ÁÖ¼Ò°ª
-		for(int j = 0; j<score[i].length; j++) {//score[i] = ÁÖ¼Ò°ª
-			System.out.println(score[i][j]); // score[i][j] = º¯¼ö°ª
+	for(int i = 0; i<score.length;i++) {//score = ì£¼ì†Œê°’
+		for(int j = 0; j<score[i].length; j++) {//score[i] = ì£¼ì†Œê°’
+			System.out.println(score[i][j]); // score[i][j] = ë³€ìˆ˜ê°’
 		}
 	}
-	System.out.println("2Â÷¿ø ¹è¿­ÀÇ Å©±â : " + score.length);
-	System.out.println("2Â÷¿ø ¹è¿­ÀÇ ÁÖ¼Ò : " + score); //[[I@22a71081
-	//System.out.println(score[j].length);		//	[[´Â 2Â÷¿øÀÇ ¶æ 
-	//2Â÷¿ø ¹è¿­¿¡¼­´Â 2Â÷¿ø ¹è¿­¸íµµ ÁÖ¼Ò, 1Â÷¿ø ¹è¿­¸íµµ ÁÖ¼Ò°¡ µÈ´Ù. (Áß¿ä)
-	for(int i = 0; i<score.length;i++) {//score = ÁÖ¼Ò°ª
-				System.out.println("1Â÷¿ø ¹è¿­ÀÇ ÁÖ¼Ò : " + score[i]); // score[i][j] = º¯¼ö°ª
-			System.out.println("1Â÷¿ø ¹è¿­ÀÇ Å©±â : " + score[i].length);
+	System.out.println("2ì°¨ì› ë°°ì—´ì˜ í¬ê¸° : " + score.length);
+	System.out.println("2ì°¨ì› ë°°ì—´ì˜ ì£¼ì†Œ : " + score); //[[I@22a71081
+	//System.out.println(score[j].length);		//	[[ëŠ” 2ì°¨ì›ì˜ ëœ» 
+	//2ì°¨ì› ë°°ì—´ì—ì„œëŠ” 2ì°¨ì› ë°°ì—´ëª…ë„ ì£¼ì†Œ, 1ì°¨ì› ë°°ì—´ëª…ë„ ì£¼ì†Œê°€ ëœë‹¤. (ì¤‘ìš”)
+	for(int i = 0; i<score.length;i++) {//score = ì£¼ì†Œê°’
+				System.out.println("1ì°¨ì› ë°°ì—´ì˜ ì£¼ì†Œ : " + score[i]); // score[i][j] = ë³€ìˆ˜ê°’
+			System.out.println("1ì°¨ì› ë°°ì—´ì˜ í¬ê¸° : " + score[i].length);
 	}
-	//2Â÷¿ø ¹è¿­¿¡¼­´Â ¹è¿­¸í[][]ÀÌ °ð º¯¼ö¿Í µ¿ÀÏÇÏ´Ù.
+	//2ì°¨ì› ë°°ì—´ì—ì„œëŠ” ë°°ì—´ëª…[][]ì´ ê³§ ë³€ìˆ˜ì™€ ë™ì¼í•˜ë‹¤.
 	score[0][0] = 999;
 	System.out.println(score[0][0]);
 	
 	
-	//Çâ»óµÈ for¹®(JDK 1.5 ÀÌ»ó ¹öÀüºÎÅÍ)
-	//collection framework °´Ã¼¿¡ Á¢±ÙÇÒ ¶§, ÀÚÁÖ »ç¿ëµÇ´Â ¹æ¹ý
-	//for( °¡Á®¿Ã Å¸ÀÔ : °¡Á®¿Ã Àå¼Ò(ÁÖ¼Ò)) 
+	//í–¥ìƒëœ forë¬¸(JDK 1.5 ì´ìƒ ë²„ì „ë¶€í„°)
+	//collection framework ê°ì²´ì— ì ‘ê·¼í•  ë•Œ, ìžì£¼ ì‚¬ìš©ë˜ëŠ” ë°©ë²•
+	//for( ê°€ì ¸ì˜¬ íƒ€ìž… : ê°€ì ¸ì˜¬ ìž¥ì†Œ(ì£¼ì†Œ)) 
 	int sum = 0;
-	for(int[]temp : score) {//ÇÑ¹ø¿¡ 1Â÷¿ø¹Û¿¡ ¾ÈµÊ ±×·¡¼­ ´õºí·çÇÁ¸¦ µ¹·Á¾ßµÇ´Â°ÅÀÓ
+	for(int[]temp : score) {//í•œë²ˆì— 1ì°¨ì›ë°–ì— ì•ˆë¨ ê·¸ëž˜ì„œ ë”ë¸”ë£¨í”„ë¥¼ ëŒë ¤ì•¼ë˜ëŠ”ê±°ìž„
 		for(int i : temp) {
 			sum+= i;
 			
 		}
 	}
 	
-	System.out.println("ÇÕ°è : " + sum);
+	System.out.println("í•©ê³„ : " + sum);
 }
 }

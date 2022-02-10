@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- 
+	2차원 변형(transform)
+		. 회전, 확대, 축소, 이동, 찌그러뜨리기 등 기하학적 모양출력
+		
+		. 종류 :
+			- transform : translate(20px, -30px) -> 우측으로 20px, 좌측으로 -30px 
+								    (left   top)
+			- transform : rotate(30deg) : 30도 회전
+			- transform : skew -> x,y 축 같이 사용하며 단위는 rotate에서 쓰는 deg를 사용
+						       -> 정해진 각도만큼 왜곡시킬 수 있다.
+						       ex) transform: skew(30deg,30deg);
+			- transform : scale -> 요소의 크기를 변경하는 태그(좌우, 상하)로 늘어난다.
+								-> translate과 마찬가지로 scale(x,y)로 입력해 사용한다.
+								-> 단위는 기존 사이즈의 몇배 이므로 width, height와는 속성이 다름
+								ex) transform: scale(2, 1.5);
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+	div[id]{
+		display: inline-block;
+		padding: 5px;
+		color: white;
+		background-color: olivedrab;
+		}
+		
+		#rotate{transform: rotate(20deg);}
+		#skew{transform: skew(0deg, -20deg);}
+		#translate{transform: translate;}
+		#scale{transform: scale(3, 1);}
+		
+		/*실습 : 마우스를 올렸을때
+		- 80도 회전
+		- x측으로 0도, y축으로 -60도 찌그러뜨림
+		- x 50, y100px 이동
+		- 가로 4배, 세로2배
+		가 되도록 설정해봐*/
+</style>
+</head>
+<body>
+	<h3>다양한 transform</h3>
+	
+	<hr>
+	<div id="rotate">rotate</div>
+	<div id="skew">skew</div>
+	<div id="translate">translate</div>
+	<div id="scale">scale</div>
+</body>
+</html>

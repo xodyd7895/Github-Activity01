@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div{width: 150px; height: 50px; text-align: center;}
+	
+	#container{
+		width: 300px; height: 200px; 
+		margin: 0 10px;
+		border: 2px black dashed;
+		position: relative; /*모든 요소는 static이 default이고 생략가능하다*/
+		top: 10px; left: 10px;
+	}
+	#b1{background: gray;}
+	#b2{background: green; margin: 0;}
+	#b3{
+	background: red;
+    margin: 0 10px;
+    position: relative; /*상대배치; 기존 공간은 그대로 존재하고 있다.*/
+    top: 100px;
+    left: 100px;
+    
+    }
+	#b4{background: orange; margin: 0 20px;}
+	#b5{background: darkgray;}
+
+</style>
+</head>
+<body>
+	<div id="b1">박스1</div>
+	<div id="container">
+		<div id="b2">박스2</div>
+		<div id="b3">박스3</div>
+		<div id="b4">박스4</div>
+	</div>
+	<div id="b5">박스5</div>
+</body>
+</html>

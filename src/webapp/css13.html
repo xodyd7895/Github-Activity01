@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	@keyframes textColorAnimation{
+			0%{color: blue;}
+			30%{color: green}
+			100%{color: red;}
+			70%{color: olive;}
+			21%{color: green;}
+		}
+		span{
+			animation-name: textColorAnimation;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			
+			background-attachment: lightgray;
+			font-size: 100px;
+			
+		}
+</style>
+</head>
+<body>
+	<p><span>span</span>텍스트를 5초에 blue,green,red로 변환</p>
+	
+</body>
+</html>

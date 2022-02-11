@@ -1,14 +1,14 @@
 package example05;
 
 public class SamsungPhoneEx {
-
+	//without css code
 	public static void main(String[] args) {
 
 		
 		SamsungPhone sam = new SamsungPhone();
 		
-		sam.setCom("»ï¼ºÀÌ");
-		sam.setMod("°¶·°½Ã°¡");
+		sam.setCom("Â»Ã¯Â¼ÂºÃ€ÃŒ");
+		sam.setMod("Â°Â¶Â·Â°Â½ÃƒÂ°Â¡");
 		sam.setrel(2021);
 		sam.setCol("black");
 		System.out.println(sam.toString());

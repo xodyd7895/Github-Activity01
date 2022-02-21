@@ -1,4 +1,4 @@
-
+//JS 추가적인 설정 중 
 /*
 let age_of_retirement=prompt("대한민국 법적 은퇴 연령은 몇살인가요?");
 

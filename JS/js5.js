@@ -20,3 +20,13 @@ if(age==57){
 else if(age <= 56){
   document.write("좀더 위");
 }
+
+var id = prompt('아이디 입력');
+if(id==="xodyd7895"){
+  var password = prompt('비번입력');
+  if(password==='123456');
+  alert('로그인 성공');
+  alert(id+"님"+"안녕하세요");
+  else if(password!='123456'){
+    alert('비밀번호 다시 확인요망');
+  }

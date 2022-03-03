@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+        <title></title>
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style type="text/css">
+  </style>
+  <script type="text/javascript">
+      (function($) {
+    $(function() {
+
+      $('nav ul li a:not(:only-child)').click(function(e) {
+        $(this).siblings('.nav-dropdown').toggle();
+
+        $('.nav-dropdown').not($(this).siblings()).hide();
+        e.stopPropagation();
+      });
+
+      $('html').click(function() {
+        $('.nav-dropdown').hide();
+      });
+
+      $('#nav-toggle').click(function() {
+        $('nav ul').slideToggle();
+      });
+
+      $('#nav-toggle').on('click', function() {
+        this.classList.toggle('active');
+      });
+    });
+  })(jQuery);
+  </script>
+    <body style="margin: 0px!important;">
+        <header class="navigation">
+            <div class="nav-container">
+              <div class="brand">
+                <a href="#">gallery</a>
+              </div>
+              <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
+                <ul class="nav-list">
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">About</a>
+                    <ul class="nav-dropdown">
+                      <a href="#">Artist</a>
+                    </ul>
+
+                  </li>
+                  <li>
+                    <a href="#">Arts</a>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="#">Purchase</a>
+                      </li>
+                      <li>
+                        <a href="#">Gallery</a>
+                      </li>
+
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                  <li>
+                    <a ID="login" href="#">로그인</a>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+
+      <section class="about-section">
+        <div class="about-container">
+          <div class="row clearfix">
+            <div class="content-column col-md-6 col-sm-12 col-xs-12">
+                  	<div class="inner-column">
+                      	<div class="sec-title">
+                      		<div class="title">About Us</div>
+                          	<h2>현재 화가분께서  <br> 준비중입니다.</h2>
+                          </div>
+                          <div class="text">현재 준비중입니다.</div>
+                          <div class="email">문의 사항 시: <span class="theme_color">xodyd7895@gmail.com</span></div>
+                          <a href="about.html" class="theme-btn btn-style-three">Read More</a>
+                      </div>
+                  </div>
+
+                  <!--Image Column-->
+                  <div class="image-column col-md-6 col-sm-12 col-xs-12">
+                  	<div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
+                      	<div class="image">
+                          	<img src="https://images.unsplash.com/photo-1507643179773-3e975d7ac515?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+                              <div class="overlay-box">
+                              	<div class="year-box"><span class="number">27</span>Years <br> Experience <br> Painting</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </section>
+      <div class="sidebar">카테고리
+        <ul class="sidebar-list">
+          <a class="bar-list1" href="#"><li>카테고리1</li></a>
+            <a class="bar-list1" href="#"><li>카테고리2</li></a>
+            <a class="bar-list1" href="#"><li>카테고리3</li></a>
+        </ul>
+      </div>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript">
+          $('.sidebar').on('click', function () {
+        $('.sidebar-list').toggleClass('hidden');
+      });
+      </script>
+    </body>
+    </html>
+
+  </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="purchase1.css">
+        <title></title>
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style type="text/css">
+  </style>
+  <script type="text/javascript">
+      (function($) { // Begin jQuery
+    $(function() { // DOM ready
+      // If a link has a dropdown, add sub menu toggle.
+      $('nav ul li a:not(:only-child)').click(function(e) {
+        $(this).siblings('.nav-dropdown').toggle();
+        // Close one dropdown when selecting another
+        $('.nav-dropdown').not($(this).siblings()).hide();
+        e.stopPropagation();
+      });
+      // Clicking away from dropdown will remove the dropdown class
+      $('html').click(function() {
+        $('.nav-dropdown').hide();
+      });
+      // Toggle open and close nav styles on click
+      $('#nav-toggle').click(function() {
+        $('nav ul').slideToggle();
+      });
+      // Hamburger to X toggle
+      $('#nav-toggle').on('click', function() {
+        this.classList.toggle('active');
+      });
+    }); // end DOM ready
+  })(jQuery); // end jQuery
+  </script>
+    <body style="margin: 0px!important;">
+        <section class="navigation">
+            <div class="nav-container">
+              <div class="brand">
+                <a href="#">gallery</a>
+              </div>
+              <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
+                <ul class="nav-list">
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">About</a>
+                    <ul class="nav-dropdown">
+                      <a href="#">Artist</a>
+                    </ul>
+
+                  </li>
+                  <li>
+                    <a href="#">Arts</a>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="#">Purchase</a>
+                      </li>
+                      <li>
+                        <a href="#">Gallery</a>
+                      </li>
+
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                  <li>
+                    <li>
+                      <a href="#">test님</a>
+                      <ul class="nav-dropdown">
+                        <li>
+                          <a href="#">정보 수정</a>
+                        </li>
+                        <li>
+                          <a href="#">로그아웃</a>
+                        </li>
+              </nav>
+            </div>
+          </section>
+          <article class="product">
+            <section>
+              <div></div>
+              <img src="#">
+              <img src="#">
+              <img src="#">
+              <img src="#">
+            </section>
+
+            <div></div>
+
+            <section>
+              <div>
+                <h3>그림 제목</h3>
+              </div>
+              <hr>
+
+              <div>
+                <p>판매가<br>배송비<br>그린이<br>완성 시점<br>구매수량<br>
+                <p>5,019,000원<br>업체무료배송<br>Painter<br>20220304<br>
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select></p>
+              </div>
+              <hr>
+
+              <div>
+                <h4>총 합계금액</h4>
+                <h4>5,019,000원</h4>
+              </div>
+
+              <div>
+                <button>결제하기</button>
+                <button>장바구니</button>
+                <button>♡</button>
+              </div>
+            </section>
+          </article>
+          <!--
+          <hr class="hrwidth">
+        -->
+
+
+
+          <article class="full">
+            <div id="purchase div">
+            <div class="ready">
+              <h2>준비중입니다.<br>―</h2>
+              <p>새롭게 디자인된 그림 지금 만나보세요.</p>
+              <button>view more</button>
+            </div>
+          </article>
+
+
+
+          <footer>
+            <article>
+              <section>
+                <img src="#">
+                <p>Gallery<br>
+                  Contac us
+                  031-1234-1151<br>
+                  k<br><br>
+                  2022</p>
+              </section>
+
+              <section>
+                <h5>업체문의</h5>
+                <nav>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </nav>
+              </section>
+
+              <section>
+                <h5>abc</h5>
+                <nav>
+                  <a href="#">abc</a>
+                  <a href="#">ab</a>
+                  <a href="#">abc</a>
+                  <a href="#">abc</a>
+                  <a href="#"></a>
+                </nav>
+              </section>
+
+              <section>
+                <h5>고객문의</h5>
+                <p>고객님의 문의정보를 찾아보세요.</p>
+                <div><input type="text"><button>GO</button></div>
+                <div>
+                  <img src="">
+                  <img src="">
+                  <img src="">
+                  <img src="">
+                </div>
+                </div>
+              </section>
+            </article>
+          </footer>
+
+        <script type="text/javascript">
+
+        //햄버거 메뉴
+        function openNav() {
+          document.getElementById("open").style.display = "none";
+          document.getElementById("nav").style.width = "100%";
+        }
+
+        function closeNav() {
+          document.getElementById("nav").style.width = "0%";
+          document.getElementById("open").style.display = "block";
+        }
+        </script>
+
+    </body>
+    </html>
